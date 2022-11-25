@@ -1,0 +1,11 @@
+.nav{
+    background-color: azure;
+    margin: 5px;
+    padding: auto;
+    display: flex;
+    align-items: stretch;
+}
+
+body {
+    background: rgba(27, 27, 137, 0.3) /* Green background with 30% opacity */
+}
