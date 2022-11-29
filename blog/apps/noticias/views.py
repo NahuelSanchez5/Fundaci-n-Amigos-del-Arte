@@ -1,5 +1,4 @@
 from django.shortcuts import render
 
-def noticia_list(request):
-
-    return render(request, 'ejemplo/post_list.html', {})
+def Listar_Noticias(request):
+    return render(request, 'noticias/listar.html')
