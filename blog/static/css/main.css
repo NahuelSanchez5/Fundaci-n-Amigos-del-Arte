@@ -79,6 +79,13 @@ p {
     padding: 0 100px;
 }
 
+h4 {
+  text-align: left;
+  line-height:3.0;
+}
+
+}
+
 .btn {
     display: inline-block;
     margin-top: 15px;
