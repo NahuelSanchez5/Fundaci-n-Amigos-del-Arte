@@ -22,12 +22,12 @@
         </div>
 
         <nav class="navbar">
-            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'home' %}">Inicio</a>
             <a href="{% url 'nosotros' %}">Nosotros</a>
             <a href="{% url 'noticias:listar' %}">Noticias</a>
-            <a href="">Contacto</a>
+            <a href="{% url 'contacto' %}">Contacto</a>
 
-            {% if user.is_autenticate %}
+            {% if user.is_authenticated %}
             <strong>Bienvenido {{user.username}}</strong>
             <a href="{% url 'logout' %}">CERRAR SESION</a>
 
@@ -38,24 +38,16 @@
 
             {% endif %}
         </nav>
-
-    </div>
-    
-    <!--<header class="content header">
         
-         <h2 class="title">Inicio</h2>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-             Ipsam necessitatibus odio quisquam reprehenderit quas, 
-             obcaecati, harum hic molestiae sequi ipsa nihil id tempore explicabo 
-            libero vero quia asperiores similique dicta.
-        </p> 
-           
-    </header><-->
-    <footer>
-        <p> Página creada y modificada por alumnos de la COM.1/G6 del INFORMATORIO</p>
-    </footer>
-{% block contenido %}    
-{% endblock contenido %}
-</body>
+    </div>
+        {% block contenido %}    
+        {% endblock contenido %}
+   
+    
+</body>    
+<footer>
+    <p> Página creada y modificada por alumnos de la COM.1/G6 del INFORMATORIO</p>
+</footer>
+
+
 </html>

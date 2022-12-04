@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block contenido %}
+		<div class="iniciosesion">
 			<form method="POST">{%csrf_token%}
 				{{form.errors}}
 				<input type="text" name="username" placeholder="USUARIO">
@@ -8,4 +9,5 @@
 
 				<input type="submit" name="" value="ENVIAR">
 			</form>
+		</div>
 {% endblock %}
