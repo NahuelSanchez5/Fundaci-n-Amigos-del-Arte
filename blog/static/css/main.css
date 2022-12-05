@@ -6,9 +6,12 @@
     vertical-align: baseline;
 }
 
+/* ES EL BODY DE TODO EL PROYECTO */
 body {
     text-align: center;
     font-family: sans-serif;
+    background-color: rgb(207, 207, 207);
+    list-style-type:none
 }
 
 .head {
@@ -48,7 +51,7 @@ body {
 }
 
 .navbar a:hover {
-    background: #3f3f3f;
+    background: #9f8d8d;
 }
 
 .header {
@@ -61,146 +64,47 @@ body {
 .foto{
     height: 100%;
     width: 100%;
-
 }
 
+/* PARA USAR EN TITULOS INICIALES DE LAS APPS */
 .title {
     margin-bottom: 40px;
-    font-size: 60px;
-    font-weight: 600;
+    font-size: 100px;
+    font-weight: bolder;
     text-transform: uppercase;
-    color: rgb(38, 0, 252);
+    color: rgb(96, 23, 179);
 }
 
 p {
     margin-bottom: 40px;
     font-size: 18px;
-    color: rgb(81, 114, 28);
+    color: rgb(0, 0, 0);
     padding: 0 100px;
 }
 
-h4 {
-  text-align: left;
-  line-height:3.0;
-}
-
-
-
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 40px;
-    border: 2px solid #9c27b0;
-    color: #fff;
-    text-decoration: none;
-    background: #9c27b0;
-}
-
-.btn:hover {
-    background: none;
-    
-}
-
-.btn-home {
-    display: flex;
-}
-
-.btn-home a {
-    margin: 0 10px;
-}
-
-
-.content {
+/* LO QUE ESTA DEBAJO DE LA BARRA DE NAVEGACION */
+.cont-nosotros {
     height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
-.sau {
-    padding: 30px;
-    background: #1f1d1d
-}
-
-.box-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-
-}
-
-.box-container .box {
-    height: 11rem;
-    width: 17rem;
-    background: #101010;
-    text-align: center;
-    border-radius: 1rem;
-    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
-    margin: 2rem;   
-}
-
-.box-container .box i {
-    height: 3rem;
-    width: 3rem;
-    line-height: 3rem;
-    text-align: center;
-    border-radius: 50%;
-    color: rgb(27, 112, 146);
-    background: #9c27b0;
-    font-size: 2rem;
-    margin: 1rem 0;
-
-}
-
-.box-container .box h3 {
-    font-size: 20px;
-    color: #9c27b0;
-
-}
-
-.box-container .box p {
-    padding: 0 15px;
-    font-size: 16px;
-}
-
-.about {
-    background: #171717;
-}
-
-.price {
-    background: url(img/costos.jpg) no-repeat center;
-    background-attachment: fixed;
-    background-size: cover;
-    text-align: center;
-}
-
-
-.contact {
-    padding-top: 20px;
-    background: #171717;
-    padding-bottom: 0;
-}
-
-
-@media (max-width: 768px) {
+@media (max-width: 620px) {
 
     .title {
         margin-bottom: 0;
         font-size: 40px;
     }
-
-    .sau {
-        height: 100vh;
-    }
-
     .navbar {
         display: none;
-    }
-   
-    
+    }    
 }
+
+
+/* DESDE ACA SE RETOCA CON CSS CADA PARTE */
+
 
 .iniciosesion {
     text-align: center;
@@ -213,11 +117,13 @@ h4 {
     color:rgb(0, 0, 0);
     background-image: url(../img/OIP.jpg);
     font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .redes {
     background-color: #020300;
     width: 150px;
-    height: 90px;
+    height: 125px;
     border-radius: 10px;
     margin: auto;
     line-height: 30px;
@@ -226,8 +132,32 @@ a {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
-.mapa {
-   border-radius: 15px;
+.mapa iframe {
+   border-radius: 25px;
    margin-top: 10px;
     
+}
+
+.nosotros {
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+ul{
+    font-size: 20px;
+    list-style: none;
+    color: rgb(0, 0, 0);
+}
+
+.integrantes {
+    align-items: justify;
 }

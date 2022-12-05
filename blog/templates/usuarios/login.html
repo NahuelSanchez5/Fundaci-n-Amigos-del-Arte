@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
+
+{% block titulo %} INICIO SESION {% endblock titulo %}
+
 {% block contenido %}
 		<div class="iniciosesion">
 			<form method="POST">{%csrf_token%}
