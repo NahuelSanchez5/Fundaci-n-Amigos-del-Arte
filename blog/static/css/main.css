@@ -68,7 +68,7 @@ body {
 
 /* PARA USAR EN TITULOS INICIALES DE LAS APPS */
 .title {
-    margin-bottom: 40px;
+    margin-bottom: -5px;
     font-size: 100px;
     font-weight: bolder;
     text-transform: uppercase;
@@ -156,8 +156,34 @@ ul{
     font-size: 20px;
     list-style: none;
     color: rgb(0, 0, 0);
+    items-aling:  left;
+    justify-content: left;
+}
+/*
+ul li{
+    align-items: left;
+justify-content: left;
+}
+*/
+
+div.galeria {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  inline: block;
+  width: 180px;
 }
 
-.integrantes {
-    align-items: justify;
+div.galeria:hover {
+  border: 1px solid #777;
+}
+
+div.galeria img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
