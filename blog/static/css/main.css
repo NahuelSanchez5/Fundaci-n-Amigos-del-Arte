@@ -84,7 +84,7 @@ h4 {
   line-height:3.0;
 }
 
-}
+
 
 .btn {
     display: inline-block;
@@ -209,4 +209,25 @@ h4 {
 
 .contacto {
     padding: 200px;
+    background-color: #41443b;
+    color:rgb(0, 0, 0);
+    background-image: url(../img/OIP.jpg);
+    font-family: sans-serif;
+}
+.redes {
+    background-color: #020300;
+    width: 150px;
+    height: 90px;
+    border-radius: 10px;
+    margin: auto;
+    line-height: 30px;
+}
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.mapa {
+   border-radius: 15px;
+   margin-top: 10px;
+    
 }

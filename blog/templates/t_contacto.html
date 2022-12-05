@@ -6,15 +6,34 @@
 {% block contenido %}
 <body >
      <div class="contacto">
-        <h1>Hola, estos son los contactos de la fundacion </h1>
-        <h2>Estos son nuestros contactos</h2>
+        <h1>CONTACTOS</h1>
+        <h2>Aquí tendrás acceso a nuestras redes sociales</h2>
             <p>
-                <li>
-                    <a href="https://www.instagram.com/invites/contact/?i=13h4oeeulvmes&utm_content=okk3z6q">Instagram</a>
-                    <a href="https://www.facebook.com/EscultoresenelImpenetrable">Facebook</a>
-                    <a href="mailto:info@amigosdelarteyturismo.org">Correo</a>
-                    <a href="#">Ubicacion</a>
-                </li>
+                <div class="redes">
+                    <body>
+                        <header>
+                            <img src="{% static 'img/redes2.png'%}" width="30px" alt="">
+                            <a href="https://www.instagram.com/invites/contact/?i=13h4oeeulvmes&utm_content=okk3z6q">INSTAGRAM</a>
+                        </header>                       
+                    </body>
+                    <body>
+                        <header>
+                            <img src="{% static 'img/redes1.png'%}" width="30px" alt="">
+                            <a href="https://www.facebook.com/EscultoresenelImpenetrable">FACEBOOK</a>
+                        </header>
+                    </body>
+                    <body>
+                        <header>
+                            <img src="{% static 'img/redes3.png'%}" width="30px" alt="">
+                            <a href="mailto:info@amigosdelarteyturismo.org">CORREO</a>
+                        </header>
+                    </body>
+
+                    <section class="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d896.9209838284005!2d-60.6207856!3d-25.9456008!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94404cfba5224f0b%3A0xbe1797f5f1777f83!2sFundaci%C3%B3n%20Amigos%20del%20Arte%20y%20Turismo!5e0!3m2!1ses!2sar!4v1670259373719!5m2!1ses!2sar" width="300" height="180" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    </section>
+                </div>
             </p>
     </div>
 </body>
