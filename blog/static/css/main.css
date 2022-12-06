@@ -69,7 +69,7 @@ body {
 /* PARA USAR EN TITULOS INICIALES DE LAS APPS */
 .title {
     margin-bottom: -5px;
-    font-size: 100px;
+    font-size: 5vw;
     font-weight: bolder;
     text-transform: uppercase;
     color: rgb(96, 23, 179);
@@ -152,38 +152,40 @@ footer {
     text-align: center;
 }
 
-ul{
-    font-size: 20px;
-    list-style: none;
-    color: rgb(0, 0, 0);
-    items-aling:  left;
-    justify-content: left;
+
+
+
+.galerias {
+    background-color: rgb(202, 115, 0);
 }
-/*
-ul li{
-    align-items: left;
-justify-content: left;
-}
-*/
 
 div.galeria {
-  margin: 5px;
+  margin: 50px;
   border: 1px solid #ccc;
   float: left;
-  inline: block;
   width: 180px;
+  border-radius: 20px;
+  
 }
 
 div.galeria:hover {
-  border: 1px solid #777;
+  border: 1px solid rgb(110, 203, 23);
+  background-color: rgb(138, 155, 121);
+  color: black;
 }
 
 div.galeria img {
   width: 100%;
   height: auto;
+  border-radius: 20px;
+  align-items: center;
 }
 
 div.desc {
   padding: 15px;
   text-align: center;
+}
+
+.patrimonio {
+    clear: left;
 }

@@ -7,7 +7,7 @@
 
 <body>
   <section class="cont-nosotros">
-      <h2 class="title"> ¿Quienés somos?</h2>
+      <h2 class="title"> ¿Quienes somos?</h2>
       <p> En esta parte te contaremos acerca de la fundacion y sus integrantes. </p>
   </section>
 
@@ -67,43 +67,45 @@
     </p>
   </article>
 
+  <section class="galerias"> 
 
-  <div class="galeria">
-    
-  <a target="_blank" href="{% static 'img/presidente.jpg' %}">
-    <img src="{% static 'img/presidente.jpg' %}" alt="foto_presidente" width="600" height="400">
-  </a>
-  <div class="desc">Presidente: DG. Rene Bertolucci</div>
-</div>
     <div class="galeria">
-  <a target="_blank" href="{% static 'img/vicepresidente.jpg' %}">
-    <img src="{% static 'img/vicepresidente.jpg' %}"  alt="foto_vicepresidente" width="600" height="400">
-  </a>
-  <div class="desc">Vicepresidente: Arq. Yolanda M. Rausch</div>
-</div>
+      <a target="_blank" href="{% static 'img/presidente.jpg' %}">
+        <img src="{% static 'img/presidente.jpg' %}" alt="foto_presidente" width="600" height="400">
+      </a>
+      <div class="desc">Presidente: DG. Rene Bertolucci</div>
+    </div>
 
-<div class="galeria">
-  <a target="_blank" href="{% static 'img/secretaria.jpg' %}">
-    <img src="{% static 'img/secretaria.jpg' %}"  alt="foto_secretaria" width="600" height="400">
-  </a>
-  <div class="desc">Secretaria: Prof. Marisa Santamaría</div>
-</div>
+    <div class="galeria">
+      <a target="_blank" href="{% static 'img/vicepresidente.jpg' %}">
+        <img src="{% static 'img/vicepresidente.jpg' %}"  alt="foto_vicepresidente" width="600" height="400">
+      </a>
+      <div class="desc">Vicepresidente: Arq. Yolanda M. Rausch</div>
+    </div>
 
-<div class="galeria">
-  <a target="_blank" href="{% static 'img/tesorera1.jpg' %}" >
-    <img src="{% static 'img/tesorera1.jpg' %}"  alt="foto_tesorera" width="600" height="400">
-  </a>
-  <div class="desc">Tesorera: Prof. Elena Díaz de Lázara</div>
-</div>
+    <div class="galeria">
+      <a target="_blank" href="{% static 'img/secretaria.jpg' %}">
+        <img src="{% static 'img/secretaria.jpg' %}"  alt="foto_secretaria" width="600" height="400">
+      </a>
+      <div class="desc">Secretaria: Prof. Marisa Santamaría</div>
+    </div>
 
-<div class="galeria">
-  <a target="_blank" href="{% static 'img/vocal.jpg' %}" >
-    <img src="{% static 'img/vocal.jpg' %}"  alt="foto_vocal"  alt="foto_tesorera" width="600" height="400">
-  </a>
-  <div class="desc">Vocal: Dr. Jorge Kleisinger</div>
-</div>
+    <div class="galeria">
+      <a target="_blank" href="{% static 'img/tesorera1.jpg' %}" >
+        <img src="{% static 'img/tesorera1.jpg' %}"  alt="foto_tesorera" width="600" height="400">
+      </a>
+      <div class="desc">Tesorera: Prof. Elena Díaz de Lázara</div>
+    </div>
 
-  <!--
+    <div class="galeria">
+      <a target="_blank" href="{% static 'img/vocal.jpg' %}" ></a>
+      <img src="{% static 'img/vocal.jpg' %}"  alt="foto_vocal"  alt="foto_tesorera" width="600" height="400">
+      </a>
+      <div class="desc">Vocal: Dr. Jorge Kleisinger</div>
+    </div>
+  </section>
+
+<!--
   <section class="integrantes">
     <h3>CONFORMACIÓN ACTUAL DE LA COMISIÓN:</h3>
     <ul>
@@ -130,7 +132,7 @@
       </li>
     </ul>
   </section>
-  -->
+  
   
   <br>
   <br>
@@ -148,19 +150,21 @@
   <br>
   <br>
 
-<!--
+
   Arreglar el br, porque el texto recuperación de patrimonio historico queda pegado a las fotos.
 -->
 
-  <article>
-
-    <h2>RECUPERACIÓN DE PATRIMONIO HISTÓRICO:</h2>
-    <p>En febrero de 2015, la Municipalidad de Juan José Castelli nos cedió en comodato el antiguo edificio de la primera escuela primaria de la ciudad, la Escuela Nacional Nº 255. A partir de ese momento comenzamos a elaborar el proyecto de recuperación del mismo. 
-      Luego del Encuentro de 2015, comenzaron las obras de la primera etapa, con la colaboración del Municipio con los materiales, y la Fundación aportó la mano de obra.
-      El 7 de julio de 2016 se inauguró la 1º etapa de la obra, tres aulas y un sanitario. El edificio ahora funciona como sede de nuestra Fundación.
-    </p>
-  </article>
-
+  <section class="patrimonio">
+    <article>
+    
+      <h2>RECUPERACIÓN DE PATRIMONIO HISTÓRICO:</h2>
+      <p>En febrero de 2015, la Municipalidad de Juan José Castelli nos cedió en comodato el antiguo edificio de la primera escuela primaria de la ciudad, la Escuela Nacional Nº 255. A partir de ese momento comenzamos a elaborar el proyecto de recuperación del mismo. 
+        Luego del Encuentro de 2015, comenzaron las obras de la primera etapa, con la colaboración del Municipio con los materiales, y la Fundación aportó la mano de obra.
+        El 7 de julio de 2016 se inauguró la 1º etapa de la obra, tres aulas y un sanitario. El edificio ahora funciona como sede de nuestra Fundación.
+      </p>
+    </article>
+  </section>
+  
   <article>
     <h2>RESEÑA DE LOS ENCUENTROS ANTERIORES:</h2>
     <p>
