@@ -152,40 +152,45 @@ footer {
     text-align: center;
 }
 
-
-
-
 .galerias {
-    background-color: rgb(202, 115, 0);
+    padding: 3vw;
+    background-color: rgb(185, 163, 134);
+    display: flex;
+    justify-content: center;
 }
 
-div.galeria {
-  margin: 50px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-  border-radius: 20px;
-  
+.galeria {
+    margin: 50px;
+    border-radius: 20px;
+    height: 160px;
+    width: 160px;
 }
 
-div.galeria:hover {
-  border: 1px solid rgb(110, 203, 23);
+.galeria:hover {
+  border: 2px solid rgb(43, 15, 221);
   background-color: rgb(138, 155, 121);
-  color: black;
-}
-
-div.galeria img {
-  width: 100%;
-  height: auto;
   border-radius: 20px;
+}
+
+.galeria img {
+  width: 160px;
+  height: 160px;
   align-items: center;
+  border-radius: 20px;
 }
 
-div.desc {
-  padding: 15px;
+.nombre {
+  padding: 5px;
   text-align: center;
+  color: rgb(0, 0, 0);
+  box-sizing: content-box;
 }
 
+.integrante {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    margin-bottom: none;
+}
 .patrimonio {
     clear: left;
 }
