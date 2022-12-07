@@ -13,12 +13,12 @@
 			<p>Aquí podrás registrarte para ser parte de nuestra comunidad</p>
 
 		<div class="iniciosesion">
-			<form method="POST">{%csrf_token%}
+			<form class="login">{%csrf_token%}
 				{{form.errors}}
-				<input type="text" name="username" placeholder="USUARIO">
-				<input type="password" name="password" placeholder="PASSWORD">
+				<input type="text" name="username" placeholder="USUARIO" class="usuario">
+				<input type="password" name="password" placeholder="PASSWORD" class="contrasena">
 
-				<input type="submit" name="" value="ENVIAR">
+				<input type="submit" name="" value="ENVIAR" class="btn">
 
 			</form>
 		</div>
