@@ -1,3 +1,6 @@
+/* TIPO DE FUENTE*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
 *{
     margin: 0;
     border: 0;
@@ -9,7 +12,7 @@
 /* ES EL BODY DE TODO EL PROYECTO */
 body {
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'Poppins',sans-serif;
     background-color: rgb(207, 207, 207);
 }
 
@@ -49,7 +52,9 @@ body {
 }
 
 .navbar a:hover {
-    background: #9f8d8d;
+    background: #5fc66d;
+    border-radius: 5px;
+    
 }
 
 .header {
@@ -150,7 +155,9 @@ footer {
 }
 
 .galerias {
-    padding: 3vw;
+    padding: 4vw;
+    margin: 8vw;
+    border-radius: 10px;
     background-color: rgb(185, 163, 134);
     display: flex;
     justify-content: center;
@@ -164,7 +171,7 @@ footer {
 }
 
 .galeria:hover {
-  border: 2px solid rgb(43, 15, 221);
+  border: 2px solid #5fc66d;
   background-color: rgb(138, 155, 121);
   border-radius: 20px;
 }
