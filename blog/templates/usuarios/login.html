@@ -9,11 +9,13 @@
 		<article>
        		<h1 class="title">INICIO DE SESION</h1>
 		</article>
+		<article class="integrante">
+            <h2 class="contacto-texto2">Te invitamos ser parte de nuestra comunidad</h2>
+        </article>
 
-			<p>Aquí podrás registrarte para ser parte de nuestra comunidad</p>
-
+            <p> Registrandote podras recibir nuestras novedades e invitaciones a los eventos de la organización.</p>
 		<div class="iniciosesion">
-			<form class="login">{%csrf_token%}
+			<form method="POST" class="login">{%csrf_token%}
 				{{form.errors}}
 				<input type="text" name="username" placeholder="USUARIO" class="usuario">
 				<input type="password" name="password" placeholder="PASSWORD" class="contrasena">

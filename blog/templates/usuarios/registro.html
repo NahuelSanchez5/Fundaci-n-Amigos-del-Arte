@@ -11,7 +11,7 @@
       <div class="container">
         <div class="row mt-3">
           <div class="col-md-9 mx-auto mb-5">
-            <form action="" class="post">{% csrf_token %}         
+            <form action="" method="post">{% csrf_token %}         
               <h3 class="title">Registro</h3>
               {{form.as_p}}
               <p><input type="submit" class="btn btn-primary btn-block" value="Confirmar"></p>
@@ -22,4 +22,6 @@
     </main>
   </section>  
 </body>
+<br>
+<br>
 {% endblock contenido %}
