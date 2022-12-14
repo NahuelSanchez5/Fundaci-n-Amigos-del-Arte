@@ -4,13 +4,19 @@
 {% block titulo %} NOTICIAS {% endblock titulo %}
 
 {% block contenido %}
-  <h2 class="title">noticias</h2>
-    <img src="{{noticia.imagen.url}}" width="600px" height="auto">
-    
-    <p>TITULO: {{noticia.titulo}}</a></p>
 
-    <p>FECHA: {{noticia.fecha}}</p>
-    <p>CATEGORIA: {{noticia.categoria_noticia}}</p>
-    <p>CUERPO: {{noticia.cuerpo}}</p>
-    <a href="{% url 'noticias:listar' %}">VOLVER</a>
+<h1 class="title">noticias</h1>
+<section class="detalle-noticia">
+
+  <h2 class="integrante">{{noticia.titulo}}</h2>
+  
+  <img src="{{noticia.imagen.url}}" width="600px" height="auto" class="img-detalle">
+  
+  <p>{{noticia.cuerpo}}</p>
+</section>
+  
+<h5>FECHA DE EDICION: {{noticia.fecha}}</h5>
+<h5>CATEGORIA: {{noticia.categoria_noticia}}</h5>
+  
+<a href="{% url 'noticias:listar' %}">VOLVER</a>
 {% endblock contenido %}

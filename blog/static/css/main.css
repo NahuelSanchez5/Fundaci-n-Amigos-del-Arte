@@ -1,17 +1,17 @@
-@import url(('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap');
 
 *{
     margin: 0;
     border: 0;
-    font-size: 100%;
     vertical-align: baseline;
     list-style-type:none
 }
 
 /* ES EL BODY DE TODO EL PROYECTO */
 body {
+    
     text-align: center;
     font-family: ubuntu;
     background-color: rgb(207, 207, 207);
@@ -86,6 +86,7 @@ p {
     font-size: 21px;
     color: rgb(0, 0, 0);
     padding: 0 100px;
+    text-align: justify;
 }
 
 .patrimonio ul{
@@ -170,7 +171,6 @@ footer {
     margin: 2vw;
     background-color:rgb(119, 153, 216);
     display: flex;
-    justify-content: center;
     border-radius: 30px;
     justify-content: space-around;
 }
@@ -279,18 +279,38 @@ strong {
 
 .titulos-noticias{
     color: #000000;
+    
     font-size: x-large;
     font-weight: bolder;
     line-height: 1.8em;
 }
-/* 
-.post{
-
-    width: max-content;
+.noticias {
     display: grid;
-    place-items: center;
+    grid-template-columns: auto auto auto;
     
-    border: #000000;
-    box-shadow: #a2f200;
+    
+    column-gap: 50px;
+    row-gap: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
-*/
+.post{
+    background-color:rgb(119, 153, 216);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 0;
+}
+.post:hover{
+    box-shadow: rgb(114, 114, 114) 4px 4px;
+}
+.img-noticia{
+    margin-top: 25px;
+    border-radius: 15px;
+}
+
+.detalle-noticia{
+    font-size: 21px;
+}
