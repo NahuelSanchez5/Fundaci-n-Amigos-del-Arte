@@ -274,3 +274,23 @@ h3{
 strong {
     color: rgb(119, 153, 216);
 }
+
+/* SECCION DE NOTICIAS */
+
+.titulos-noticias{
+    color: #000000;
+    font-size: x-large;
+    font-weight: bolder;
+    line-height: 1.8em;
+}
+/* 
+.post{
+
+    width: max-content;
+    display: grid;
+    place-items: center;
+    
+    border: #000000;
+    box-shadow: #a2f200;
+}
+*/

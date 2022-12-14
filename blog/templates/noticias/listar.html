@@ -9,11 +9,21 @@
 <h1 class="title">noticias</h1>
 
 {% for noti in noticias %}
-  <img src="{{noti.imagen.url}}">
-  <p><a href="{% url 'noticias:detalle' noti.pk %}">TITULO: {{noti.titulo}}</a></p>
-  <p>FECHA: {{noti.fecha}}</p>
-  <p>CATEGORIA: {{noti.categoria_noticia}}</p>
-  <p>CUERPO: {{noti.cuerpo}}</p>
+<main>
+  <section class="principal">
+    <section class="noticias">
+      <article class="post">
+        <img src="{{noti.imagen.url}}" width="600px" height="auto">
+        <p><a href="{% url 'noticias:detalle' noti.pk %}" class="titulos-noticias">TITULO: {{noti.titulo}}</a></p>
+        <p>FECHA: {{noti.fecha}}</p>
+        <p>CATEGORIA: {{noti.categoria_noticia}}</p>
+        <!--<p>CUERPO: {{noti.cuerpo}}</p>-->
+      </article>
+    </section>
+  </section>
+
+
+</main>
 {% endfor %}
 
 
