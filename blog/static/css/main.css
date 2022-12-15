@@ -247,7 +247,7 @@ form input{
 form {
     background-color: rgb(119, 153, 216);
     border-radius: 20px;
-    box-shadow: 10px 10px rgb(61, 60, 60);
+    box-shadow: 10px 10px 10px rgb(61, 60, 60);
 }
 
 h2 {
@@ -266,7 +266,8 @@ h3{
 .contacto-texto2 {
     background-color:rgb(119, 153, 216);
     font-size: 1.5vw;
-    color: #d8d8c0; 
+    color: #d8d8c0;
+    text-align: center; 
 }
 .texto-secundario-contacto {
     font-size: 1.7vw;
@@ -321,7 +322,37 @@ strong {
 
 }
 .boton-volver {
-    color: white;
+    padding: 10px;
+    color: rgb(0, 0, 0);
     font-size: 1.2vw;
-    background-color: black;
+    background-color:rgb(119, 153, 216);
+    border-radius: 5px;
+    border-bottom: #000000;
+}
+.boton-volver:hover{
+    color: navajowhite;
+    box-shadow: 4px 4px 10px rgb(61 60 60);
+}
+
+/* PARTE DE COMENTARIOS */
+
+.comentarios{
+    width: 25vw;
+    height: 180px;
+    box-shadow: 4px 4px 10px rgb(61 60 60);
+}
+
+.comentarios textarea{
+    width: 90%;
+    height: 65%;
+    margin: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+.hora-categ{
+    
 }

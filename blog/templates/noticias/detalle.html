@@ -6,26 +6,35 @@
 {% block contenido %}
 
 <h1 class="title">noticias</h1>
+
 <section class="detalle-noticia">
 
-  <h2 class="integrante">{{noticia.titulo}}</h2>
+  	<h2 class="integrante">{{noticia.titulo}}</h2>
   
-  <img src="{{noticia.imagen.url}}" width="600px" height="auto" class="img-detalle">
-  
+  	<img src="{{noticia.imagen.url}}" width="600px" height="auto" class="img-detalle">
+  	<div class="hora-categ">
+
+		  <h6>{{noticia.fecha}}</h6>
+		  <h6>CATEGORIA: {{noticia.categoria_noticia}}</h6>
+	</div>
   <p>{{noticia.cuerpo}}</p>
 </section>
-<form method="POST" action="{% url 'noticias:comentar' %}">{% csrf_token %}
+
+<a href="{% url 'noticias:listar' %}" class="boton-volver">VOLVER</a>
+
+<form method="POST" action="{% url 'noticias:comentar' %}" class="comentarios">{% csrf_token %}
   <textarea  name="comentario" maxlength="1500"></textarea>
   <input type="text" name="id_noticia" value="{{noticia.pk}}" hidden="">
   <input type="submit" value="GUARDAR">
 </form>
 
-<a href="{% url 'noticias:listar' %}" class="boton-volver">VOLVER</a>  
+  
 <br>
 <br>
-<h5>FECHA DE EDICION: {{noticia.fecha}}</h5>
-<h5>CATEGORIA: {{noticia.categoria_noticia}}</h5>
+
 <h3>COMENTARIOS</h3>
+
+
 		{% for com in comentarios %}
 		{% if user == com.usuario %}
 			<!--<a href="">borrar</a><-->
@@ -34,5 +43,4 @@
 		<strong>USUARIO:{{com.usuario}}</strong><br>
 		<p>{{com.texto}}</p>
 		{% endfor %}
-
 {% endblock contenido %}
