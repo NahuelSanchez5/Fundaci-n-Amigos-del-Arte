@@ -314,3 +314,14 @@ strong {
 .detalle-noticia{
     font-size: 21px;
 }
+.submenu {
+    padding: 50px;
+    background-color: rgb(0, 0, 0);
+    font-size: 1.2vw;
+
+}
+.boton-volver {
+    color: white;
+    font-size: 1.2vw;
+    background-color: black;
+}

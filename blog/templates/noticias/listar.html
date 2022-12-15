@@ -5,10 +5,15 @@
 
 {% block contenido %}
 
-
 <h1 class="title">noticias</h1>
-
-<main>  
+<div class="submenu">
+  <a href="{% url 'noticias:listar' %}">Noticias</a>
+  {% for cat in categorias %}
+      <a href="?id={{cat.pk}}">{{cat.nombre}}</a>
+  {% endfor %}
+</div>
+<main>
+  
   <section class="principal">
     
     <section class="noticias">

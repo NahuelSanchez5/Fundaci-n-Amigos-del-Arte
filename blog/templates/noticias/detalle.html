@@ -14,9 +14,25 @@
   
   <p>{{noticia.cuerpo}}</p>
 </section>
-  
+<form method="POST" action="{% url 'noticias:comentar' %}">{% csrf_token %}
+  <textarea  name="comentario" maxlength="1500"></textarea>
+  <input type="text" name="id_noticia" value="{{noticia.pk}}" hidden="">
+  <input type="submit" value="GUARDAR">
+</form>
+
+<a href="{% url 'noticias:listar' %}" class="boton-volver">VOLVER</a>  
+<br>
+<br>
 <h5>FECHA DE EDICION: {{noticia.fecha}}</h5>
 <h5>CATEGORIA: {{noticia.categoria_noticia}}</h5>
-  
-<a href="{% url 'noticias:listar' %}">VOLVER</a>
+<h3>COMENTARIOS</h3>
+		{% for com in comentarios %}
+		{% if user == com.usuario %}
+			<!--<a href="">borrar</a><-->
+		{% endif %}
+		<strong>FECHA:{{com.fecha}}</strong><br>
+		<strong>USUARIO:{{com.usuario}}</strong><br>
+		<p>{{com.texto}}</p>
+		{% endfor %}
+
 {% endblock contenido %}
