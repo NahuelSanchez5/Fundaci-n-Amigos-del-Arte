@@ -46,7 +46,7 @@
                 <a href="{% url 'contacto' %}">Contacto</a>
 
                 {% if user.is_authenticated %}
-                    <strong>Bienvenido {{user.username}}</strong>
+                    <strong class"mensaje">Bienvenido {{user.username}}</strong>
                     <a href="{% url 'logout' %}">CERRAR SESION</a>
                 {% else %}
                     <a href="{% url 'login' %}">INICIAR SESION</a>

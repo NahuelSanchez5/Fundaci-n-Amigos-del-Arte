@@ -6,13 +6,15 @@
 {% block contenido %}
 
 <h1 class="title">noticias</h1>
-<div class="submenu">
-  <a href="{% url 'noticias:listar' %}">Noticias</a>
-  {% for cat in categorias %}
-      <a href="?id={{cat.pk}}">{{cat.nombre}}</a>
-  {% endfor %}
+<div class="fondo-submenu">
+  <div class="navbar">
+    <a href="{% url 'noticias:listar' %}">Noticias</a>
+    {% for cat in categorias %}
+    <a href="?id={{cat.pk}}">{{cat.nombre}}</a>
+    {% endfor %}
+  </div>
 </div>
-<main>
+<main class="main">
   
   <section class="principal">
     
@@ -23,8 +25,8 @@
         <p><a href="{% url 'noticias:detalle' noti.pk %}" class="titulos-noticias">{{noti.titulo}}</a></p>
         <!--
           <p>FECHA: {{noti.fecha}}</p>
-        <p>CATEGORIA: {{noti.categoria_noticia}}</p>
-        <p>CUERPO: {{noti.cuerpo}}</p>
+          <p>CATEGORIA: {{noti.categoria_noticia}}</p>
+          <p>CUERPO: {{noti.cuerpo}}</p>
         -->
       </article>
       {% endfor %}

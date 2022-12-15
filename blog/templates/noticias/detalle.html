@@ -20,27 +20,36 @@
   <p>{{noticia.cuerpo}}</p>
 </section>
 
-<a href="{% url 'noticias:listar' %}" class="boton-volver">VOLVER</a>
 
-<form method="POST" action="{% url 'noticias:comentar' %}" class="comentarios">{% csrf_token %}
-  <textarea  name="comentario" maxlength="1500"></textarea>
-  <input type="text" name="id_noticia" value="{{noticia.pk}}" hidden="">
-  <input type="submit" value="GUARDAR">
-</form>
-
-  
-<br>
-<br>
-
-<h3>COMENTARIOS</h3>
-
-
+	<a href="{% url 'noticias:listar' %}" class="boton-volver">VOLVER A NOTICIAS</a>
+	
+	<section class="comentar">
+		
+		<form method="POST" action="{% url 'noticias:comentar' %}" class="comentarios">{% csrf_token %}
+			<textarea  name="comentario" maxlength="1500" placeholder="Deje su comentario aquí"></textarea>
+			<input type="text" name="id_noticia" value="{{noticia.pk}}" hidden="">
+			<input type="submit" value="ENVIAR" class="guardar">
+		</form>
+	</section>
+	<br>
+	<br>
+	<section class="respuestas">
+		
+		<h3 class="integrante">COMENTARIOS</h3>
+		
+		
 		{% for com in comentarios %}
-		{% if user == com.usuario %}
-			<!--<a href="">borrar</a><-->
-		{% endif %}
-		<strong>FECHA:{{com.fecha}}</strong><br>
-		<strong>USUARIO:{{com.usuario}}</strong><br>
 		<p>{{com.texto}}</p>
+		{% if user == com.usuario %}
+		<a href="" class="borrar">borrar</a>
+		{% endif %}
+		<br>
+		<strong class="fecha-comentario">{{com.fecha}}</strong><br>
+		<strong class="usuario-comentario">{{com.usuario}}</strong><br>
+		
+		
 		{% endfor %}
+	</section>
+	
 {% endblock contenido %}
+	
