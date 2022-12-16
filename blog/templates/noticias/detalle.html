@@ -41,9 +41,8 @@
 		{% for com in comentarios %}
 		<p>{{com.texto}}</p>
 		{% if user == com.usuario %}
-		<a href="" class="borrar">borrar</a>
+		<!--  <a href="" class="borrar">borrar</a>  -->
 		{% endif %}
-		<br>
 		<strong class="fecha-comentario">{{com.fecha}}</strong><br>
 		<strong class="usuario-comentario">{{com.usuario}}</strong><br>
 		
