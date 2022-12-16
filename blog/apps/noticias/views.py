@@ -12,7 +12,7 @@ def Listar_Noticias(request):
     if id_categoria:
         n = Noticia.objects.filter(categoria_noticia = id_categoria)
     else:
-        n = Noticia.objects.all()
+        n = Noticia.objects.all().order_by('-fecha')
 
     contexto['noticias'] = n
 
