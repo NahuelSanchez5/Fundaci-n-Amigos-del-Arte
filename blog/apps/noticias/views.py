@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 from .models import Noticia, Categoria, Comentario
 from django.urls import reverse_lazy
 
-@login_required
+
 def Listar_Noticias(request):
     contexto = {}
 
@@ -21,7 +21,7 @@ def Listar_Noticias(request):
     
     return render(request, 'noticias/listar.html', contexto)
 
-@login_required    
+    
 def Detalle_Noticias(request,pk):
     contexto = {}
     n = Noticia.objects.get(pk = pk) #RETORNA SOLO UN OBJETO
