@@ -43,5 +43,5 @@ urlpatterns = [
     path('Usuario/',include('apps.usuarios.urls')),
     
     path('Contacto/', views.Contacto, name = 'contacto'),
-]+static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
 
